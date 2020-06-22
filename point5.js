@@ -37,3 +37,7 @@ export const randomStr = (len = 10) => {
   return [...Array(len)].map(i=>chars[Math.random()*chars.length|0]).join``;
   
 };
+
+// Shuffles the items of an Array and returns a new Array
+
+export const shuffle = arr => arr.sort(() => Math.random() - 0.5);
