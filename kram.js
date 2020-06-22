@@ -32,7 +32,7 @@ export const uuidv4 = () => {
 
 export const randomStr = (len = 10) => {
 
-  const chars = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"];
+  const chars = [..."abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"];
   
   return [...Array(len)].map(i=>chars[Math.random()*chars.length|0]).join``;
   
